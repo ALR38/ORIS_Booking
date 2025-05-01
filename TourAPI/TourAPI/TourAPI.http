@@ -1,0 +1,4 @@
+@TourAPI_HostAddress = http://localhost:5110
+
+GET {{TourAPI_HostAddress}}/api/tours/all
+Accept: application/json

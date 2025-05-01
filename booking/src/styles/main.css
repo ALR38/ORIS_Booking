@@ -1,0 +1,289 @@
+body{
+    margin: 0;
+}
+
+h3{
+    font-family: volkhov;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1C2B38;
+    width: 216px;
+    height: 44px;
+    padding-left: 10px;
+    margin-top: 12px;
+    margin-bottom: 13px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.Tim_tim{
+    width: 1170px;
+    margin: 55px auto 0;
+}
+
+.outside_tim{
+    margin-bottom: 80px;
+}
+
+.title_tim{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-family: volkhov;
+}
+
+.line_tim{
+    color: #CEDADF;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.button_outside_tim{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+
+.iskl_tim{
+    margin-top: 0;
+}
+
+.button_left_tim{
+    width: 160px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #7BBCB0;
+    color: #ffffff;
+    border: 0;
+    padding: 6px 20px;
+    line-height: 100%;
+    font-family: mulish;
+}
+
+.b1_tim{
+    background-color: #59A9FE;
+}
+
+.b2_tim{
+    background-color: #FF6969;
+}
+
+.button_right_tim{
+    width: 110px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_right1_tim{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-color: #FFDA32;
+    background-color: #ffffff;
+    border-style: solid;
+}
+
+.button_right2_tim{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FFDA32;
+    border: 0;
+}
+
+.carts_tim{
+    display: flex;
+}
+
+.cart_1_tim{
+    width: 250px;
+    height: 385px;
+    padding: 10px;
+    margin-right: 30px;
+}
+.cart_1_tim{
+    width: 250px;
+    height: 385px;
+    padding: 10px;
+    margin-right: 30px;
+    box-shadow: 0px 2px 4px #747474;
+}
+
+.end_tim{
+    margin-right: 0;
+}
+
+.cart_line_tim{
+    color: #E8EAEB;
+    margin: 20px 0px 4px 0px;
+}
+
+.cart_description_tim{
+    margin-left: 10px;
+    font-family: mulish;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #495560;
+    display: flex;
+    flex-direction: column;
+}
+
+.description_time_tim{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 2px;
+}
+
+.description_transport_tim{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.description_family_tim{
+    display: flex;
+    margin-left: 2px;
+}
+
+.description_time_img_tim{
+    margin-right: 7px;
+}
+
+.description_car_img_tim{
+    margin-right: 5.4px;
+}
+
+.description_family_img_tim{
+    margin-right: 4.91px;
+}
+
+.cart_info_tim{
+    margin: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stars_tim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #778088;
+    font-family: mulish;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.money_tim{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.dol_tim{
+    color: #7BBCB0;
+    font-family: volkhov;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0%;
+}
+
+.per_tim{
+    color: #778088;
+    font-family: mulish;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.footer_tim{
+    background-color: #13253F;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    font-family: mulish;
+    margin-top: 80px;
+}
+
+.footer_language_currency_tim{
+    margin-right: 151px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.footer_language_tim{
+    width: 210px; 
+    height: 46px; 
+    margin-top: 10px; 
+    background-color: #13253F; 
+    color: #ffffff;
+    font-family: mulish;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.footer_currency_tim{
+    width: 210px; 
+    height: 46px; 
+    margin-top: 10px; 
+    background-color: #13253F; 
+    color: #ffffff;
+    font-family: mulish;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.footer_currency_tim{
+    margin-top: 12px;
+}
+
+.footer_company_tim{
+    margin-right: 186px;
+}
+
+.footer_help_tim{
+    margin-right: 173px;
+}
+
+.footer_pay_tim{
+    margin-bottom: 99px;
+}
+
+.footer_footer_tim{
+    display: flex;
+    justify-content: center;
+    background-color: #0e1b2e;
+    color: #ffffff;
+    height: 60px;
+    align-items: center;
+}
+
+.footer_footer_text_tim{
+    margin-right: 651px;
+    font-family: mulish;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+}

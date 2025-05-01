@@ -1,0 +1,197 @@
+/* volkhov-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Volkhov';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/volkhov-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* volkhov-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Volkhov';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/volkhov-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* mulish-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/mulish-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* mulish-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/mulish-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* mulish-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/mulish-v13-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* html{
+    box-sizing: border-box;
+} */
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: whitesmoke;
+    justify-content: space-around;
+    font-family: 'Mulish';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600px;
+}
+
+.wrapper{
+    width: 1170px;
+    height: 1405px;
+    top: 3406px;
+    left: 135px;
+    margin: auto;
+}
+
+.section-gallery{
+}
+
+.header-text-block{
+    height: 115px;
+    width: 538px;
+}
+
+.header-block-with-btn{
+    display: flex;
+    height: 115px;
+    width: 1170px;
+}
+
+.text-title{
+    height: 46px;
+    width: 309px;
+    margin: 0;
+    font-family: 'Volkhov';
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.gallery-text{
+    height: 50px;
+    width: 538px;
+    margin: 0;
+    margin-top: 19px;
+}
+
+.btn-view-all-images{
+    margin-left: 442px;
+    margin-top: 31px;
+    width: 190px;
+    height: 54px;
+}
+
+.btn-view-all{
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    width: 190px;
+    height: 54px;
+    border-radius: 3px;
+    background-color: #495560;
+}
+
+.btn-view-all:hover, .btn-view-all:focus, .btn-view-all:active{
+    background-color: #596a79;
+}
+
+.gallery-images-container{
+    margin: 0;
+    margin-top: 60px;
+    width: 1170px;
+    height: 670px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.stories-text-title{
+    width: 497px;
+}
+
+.stories-block{
+    margin-top: 71px;
+}
+
+.stories-images-container{
+    width: 1170px;
+    height: 315px;
+    margin-top: 59px;
+}
+
+.stories-image-container{
+    width: 270px;
+    height: 315px;
+    background-color: #FFFFFF;
+}
+
+.stories-image{
+    width: 270px;
+    height: 200px;
+}
+
+.author-card{
+    height: 30px;
+    margin-top: 7px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.content-author-icons{
+    width: 24px;
+    height: 24px;
+    margin: 3px 6px 3px 0px;
+}
+
+.author-name{
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 14px;
+    display: inline;
+}
+
+.stories-content-text-conteiner{
+    width: 230px;
+    height: 56px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.stories-images-container{
+    margin: 0;
+    margin-top: 60px;
+    width: 1170px;
+    height: 670px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+}

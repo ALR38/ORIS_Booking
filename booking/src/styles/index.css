@@ -1,0 +1,322 @@
+.header {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Mulish";
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+.nav__list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav__link {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.nav__button {
+  padding: 14px 43px;
+  background-color: #ffda32;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Mulish";
+  font-weight: 800;
+}
+
+/* .main {
+  padding: 0 135px;
+} */
+
+.header-main {
+  padding: 23px 135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-main__left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header-main__title {
+  color: var(--text-color);
+  font-family: "Volkhov";
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.header-main__subtitle {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Mulish";
+  color: var(--text-color-light);
+}
+
+.header-main__label {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  font-family: "Mulish";
+}
+
+.header-main__select {
+  width: 310px;
+  padding: 13px 20px;
+  background-color: var(--background-color-light);
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Mulish";
+  line-height: 18px;
+  border-radius: 3px;
+}
+
+.header-main__right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.container {
+  padding: 30px 135px 80px 135px;
+  border-radius: 4px;
+  display: flex;
+  gap: 30px;
+  background-color: var(--container-background-color);
+}
+
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.availability__title {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--background-color-light);
+  font-family: "Mulish";
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--text-color);
+}
+
+.availability__text {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 10px;
+  font-family: "Mulish";
+  color: var(--text-color);
+}
+.availability__input {
+  width: 210px;
+  position: relative;
+  background: url("../assets/icons/calendar.svg") no-repeat right 10px center;
+  background-size: 20px;
+  padding: 13px 16px;
+  background-color: var(--background-color-light);
+  border-radius: 3px;
+  color: var(--text-color-light-secondary);
+  font-weight: 600;
+  font-family: "Mulish";
+}
+
+.availability {
+  background-color: white;
+  padding: 0 30px;
+  box-shadow: 0px 4px 10px 0px #0000001a;
+}
+
+.availability__info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 30px 0;
+}
+
+.availability__button {
+  background-color: var(--accent-color);
+  padding: 15.5px 41px;
+  border-radius: 3px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Mulish";
+}
+
+.filters__title {
+  font-family: "Mulish";
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--text-color);
+}
+.filters {
+  background-color: white;
+  box-shadow: 0px 4px 10px 0px #0000001a;
+  border-radius: 4px;
+}
+.filters__top {
+  padding: 14px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--background-color-light);
+}
+
+.filters__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 30px;
+}
+
+.filters__label {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Mulish";
+  color: var(--text-color-light-secondary);
+  display: flex;
+  gap: 8px;
+}
+
+.filters__link {
+  margin-top: 6px;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Mulish";
+}
+
+.places {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.places__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.places__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 10px 0px #0000001a;
+  white-space: nowrap;
+}
+
+.places__img {
+  width: 150px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.places__type {
+  font-weight: 800;
+  font-size: 11px;
+  padding: 6px 12.5px;
+  color: white;
+  background-color: var(--accent-color);
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.places__info--top {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.places__reviews {
+  font-family: "Mulish";
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--text-color-light);
+}
+
+.places__item--left {
+  display: flex;
+  gap: 8px;
+}
+
+.places__info {
+  padding: 26px 0 28px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.places__item {
+  background-color: white;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+}
+
+.places__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  font-family: "Volkhov";
+}
+
+.places__info-item--text {
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Mulish";
+  color: var(--text-color-light-secondary);
+}
+
+.places__bottom {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.places__info-item {
+  display: flex;
+  gap: 8px;
+}
+
+.places__item--right {
+  display: flex;
+  flex-direction: column;
+}
+
+.places__cost {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "Volkhov";
+  color: var(--accent-color);
+}
+
+.places__button {
+  background-color: white;
+  border: 1px solid var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 43px;
+  padding: 16px 0;
+  color: var(--accent-color);
+  font-family: "Mulish";
+}
