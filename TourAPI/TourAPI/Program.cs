@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using TourAPI;
-using TourAPI.DataSeeds;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,64 +13,41 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// CORS для React
+// CORS — разрешить всё (или конкретный фронт)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp", policy =>
     {
-        policy.WithOrigins("http://localhost:5173")
-            .AllowAnyHeader()
-            .AllowAnyMethod();
+        policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
     });
 });
+
 var app = builder.Build();
 
-// CORS и Swagger
 app.UseCors("AllowReactApp");
 
 app.UseSwagger();
+
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "TourAPI v1");
+    c.SwaggerEndpoint("/api/swagger/v1/swagger.json", "TourAPI v1");
     c.RoutePrefix = "swagger";
 });
 
 app.UseAuthorization();
 app.MapControllers();
 
-// Инициализация БД и сидинг
-using (var scope = app.Services.CreateScope())
+try
 {
+    using var scope = app.Services.CreateScope();
     var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-
-    var retries = 10;
-    var delay = TimeSpan.FromSeconds(2);
-
-    for (int i = 0; i < retries; i++)
-    {
-        try
-        {
-            context.Database.Migrate();
-
-            // Очистка и сидинг
-            if (context.Tours.Any())
-            {
-                context.Tours.RemoveRange(context.Tours);
-                context.SaveChanges();
-            }
-
-            context.Tours.AddRange(Seed.Tours);
-            context.SaveChanges();
-
-            Console.WriteLine("✅ Сидинг выполнен.");
-            break;
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"⏳ Попытка {i + 1}/{retries}: жду БД... ({ex.Message})");
-            Thread.Sleep(delay);
-        }
-    }
+    Console.WriteLine("⏳ Пробую подключиться к базе данных...");
+    context.Database.Migrate();
+    Console.WriteLine("✅ Подключение к БД успешно, миграция применена (если была).");
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"❌ Ошибка при подключении к базе данных: {ex.Message}");
 }
 
-app.Run("http://0.0.0.0:80");
+app.Run();

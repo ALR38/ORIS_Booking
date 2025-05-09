@@ -49,7 +49,7 @@ function PlacesContainer() {
             if (sort) apiParams.set("sort", sort);
 
             try {
-                const response = await fetch(`http://localhost:5110/api/tours/filter?${apiParams.toString()}`);
+                const response = await fetch(`http://www.azmitov.somee.com/api/api/tours/filter?${apiParams.toString()}`);
                 const data = await response.json();
 
                 if (!Array.isArray(data)) {

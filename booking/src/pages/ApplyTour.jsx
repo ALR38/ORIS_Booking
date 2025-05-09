@@ -17,7 +17,7 @@ const ApplyTour = () => {
     const [formErrors, setFormErrors] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5110/api/tours/${id}`)
+        fetch(`http://azmitov.somee.com/api/api/tours/${id}`)
             .then(res => {
                 if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
                 return res.json();
@@ -74,15 +74,21 @@ const ApplyTour = () => {
             comment: formData.comment,
         };
 
-        fetch("http://localhost:5110/api/emailSender", {
+        fetch("http://azmitov.somee.com/api/emailSender", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(dataToSend),
         })
-            .then(res => res.json())
-            .then(data => {
+            .then(async res => {
+                if (!res.ok) {
+                    throw new Error(`HTTP error! status: ${res.status}`);
+                }
+
+                const text = await res.text(); // получаем ответ как текст
+                const data = text ? JSON.parse(text) : null;
+
                 console.log("Application submitted:", data);
                 alert("Заявка на бронирование тура отправлена!");
             })
@@ -91,6 +97,7 @@ const ApplyTour = () => {
                 alert("Ошибка при отправке заявки");
             });
     };
+
 
     if (error) return (
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh", color: "#ef4444", fontSize: "18px" }}>

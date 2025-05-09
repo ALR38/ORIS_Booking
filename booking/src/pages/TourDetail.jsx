@@ -9,7 +9,7 @@ const TourDetail = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:5110/api/tours/${id}`)
+        fetch(`http://azmitov.somee.com/api/api/tours/${id}`)
             .then(res => {
                 if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
                 return res.json();

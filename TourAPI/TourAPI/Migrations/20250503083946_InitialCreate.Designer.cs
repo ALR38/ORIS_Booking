@@ -12,7 +12,7 @@ using TourAPI;
 namespace TourAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250430164024_InitialCreate")]
+    [Migration("20250503083946_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
